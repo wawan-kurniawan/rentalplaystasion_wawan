@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Timer - PlayZone PS</title>
+    <link rel="stylesheet" href="wawan_style.css">
+</head>
+<body class="wawan_body">
+    <header class="wawan_header">
+        <nav class="wawan_nav">
+            <a href="index.html" class="wawan_logo">PLAYZONE PS</a>
+            <ul class="wawan_nav_links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="billing.html" class="wawan_active">Billing & Timer</a></li>
+                <li><a href="konsol.html">Unit & Game</a></li>
+                <li><a href="snack.html">Snack & F&B</a></li>
+                <li><a href="laporan.html">Laporan Omzet</a></li>
+                <li><a href="tentang.html">Tentang & Aturan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wawan_main">
+        <h1 class="wawan_title">Live Monitoring Billing PlayStation</h1>
+        <p>Kontrol waktu bermain pelanggan secara langsung.</p>
+
+        <div class="wawan_grid">
+            <div class="wawan_card">
+                <span id="wawan_status_1" class="wawan_badge wawan_tersedia">Tersedia</span>
+                <h3 class="wawan_title">Unit 01 - PlayStation 4 Pro</h3>
+                <p>Tarif: Rp 8.000 / jam</p>
+                <h2 id="wawan_timer_1" class="wawan_title">00:00:00</h2>
+                <p>Estimasi Tagihan: <strong id="wawan_biaya_1">Rp 0</strong></p><br>
+                <button class="wawan_btn" onclick="mulaiBilling(1, 8000)">Mulai</button>
+                <button class="wawan_btn wawan_btn_danger" onclick="stopBilling(1)">Selesai</button>
+            </div>
+
+            <div class="wawan_card">
+                <span id="wawan_status_2" class="wawan_badge wawan_tersedia">Tersedia</span>
+                <h3 class="wawan_title">Unit 02 - PlayStation 5</h3>
+                <p>Tarif: Rp 15.000 / jam</p>
+                <h2 id="wawan_timer_2" class="wawan_title">00:00:00</h2>
+                <p>Estimasi Tagihan: <strong id="wawan_biaya_2">Rp 0</strong></p><br>
+                <button class="wawan_btn" onclick="mulaiBilling(2, 15000)">Mulai</button>
+                <button class="wawan_btn wawan_btn_danger" onclick="stopBilling(2)">Selesai</button>
+            </div>
+
+            <div class="wawan_card">
+                <span id="wawan_status_3" class="wawan_badge wawan_tersedia">Tersedia</span>
+                <h3 class="wawan_title">Unit 03 - PlayStation 5 VIP</h3>
+                <p>Tarif: Rp 20.000 / jam</p>
+                <h2 id="wawan_timer_3" class="wawan_title">00:00:00</h2>
+                <p>Estimasi Tagihan: <strong id="wawan_biaya_3">Rp 0</strong></p><br>
+                <button class="wawan_btn" onclick="mulaiBilling(3, 20000)">Mulai</button>
+                <button class="wawan_btn wawan_btn_danger" onclick="stopBilling(3)">Selesai</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="wawan_footer">
+        &copy; 2026 PlayZone Rental PlayStation - Wawan (2503010039)
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
